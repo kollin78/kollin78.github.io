@@ -6,6 +6,7 @@
 <body>
 	<h1>Hola World :)</h1>
 	<p class="me">initial filler text </p>
+	<ui class="me-jobs"> </ui>
 	<script>
 		class Person {
 			constructor(name,tasks) {
@@ -16,7 +17,13 @@
 		let jobs = ["cry","sleep","do hw","eat"]
 		let me = {name:"Kollin", tasks:jobs}
 		var p = document.getElementsByClassName("me")[0]
-		p.innerHTML = me.name + "\n" + "Jobs: " + me.jobs
+		p.innerHTML = me.name
+		var list = document.getElementsByClassName("me-jobs")[0]
+		for (i = 0; i < jobs.length; i++) {
+			let li = document.createElement('li')
+			li.innerHTML = me.jobs[i]
+			list.appendChild(li)
+		}
 	</script>
 </body>
 </html>
