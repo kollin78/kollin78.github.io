@@ -1,5 +1,13 @@
+body {
+    background-image: url(./src/landscape.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
 .test {
    display: flex;
+   flex-wrap: nowrap;
+   flex-direction: column;
 }
 
 .test > div {
@@ -12,4 +20,31 @@
 li {
     justify-content: space-around;
     margin: 1vh 1vw 1vh 1vw;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: #5097f5;
+    color: white;
+}
+#contact {
+    color: white;
 }
